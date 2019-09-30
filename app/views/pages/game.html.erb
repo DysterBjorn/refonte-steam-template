@@ -1,0 +1,156 @@
+<h1> Borderlands 3 </h1>
+
+<div id="bloc1">
+  
+  <div id="blocgauche">
+  <div id="blocimg">
+<%= image_tag "borderlands-3-aff.jpg", class:"bod" %>
+
+  </div>
+
+  <div id="descrijeu">
+    <p>Le shooter-looter original est de retour avec ses trilliards de flingues pour une aventure complètement folle!Affrontez de nouveaux mondes et ennemis dans la peau de l'un des quatre chasseurs
+      de l'Arche proposés. Jouez en solo ou en coop pour amasser du butin et sauver la galaxie d'une secte terrifiante et des ses inpitoyables leaders.</p>
+  </div>
+</div>
+
+
+  <div id="blocdroite">
+    <div id="texte">
+      <p> Evaluations récentes : <br> Très positives(17 201)</p><br>
+      <p> Toutes les évaluations : <br> Extrêmement positives (150463) </p><br>
+      <p>Date de parution : 13 Septembre 2019 </p><br>
+      <p> Développeur : Gearbox Software </p><br>
+      <p> Editeur : 2K</p><br>
+      <p> Tags : Co-op, RPG, FPS </p><br>
+
+    </div>
+    <div id="texteimg">
+    <div id="texteimg1">
+      <p><%= image_tag "ico_singlePlayer.png" ,class:"ico" %> Un joueur </p>
+      <p><%= image_tag "ico_achievements.png" ,class:"ico" %> Succès Steam</p>
+      <p><%= image_tag "ico_controller.png" ,class:"ico" %> Manette </p>
+    </div>
+    <div id="texteimg2">
+      <p><%= image_tag "ico_coop.png" ,class:"ico" %> Coopération </p>
+      <p><%= image_tag "ico_cards.png" ,class:"ico" %> Cartes </p>
+      <p><%= image_tag "ico_cloud.png" ,class:"ico" %> Steam Cloud </p>
+    </div>
+    </div>
+    <div id="pute">
+        <a class="prix" href="">
+          <div class="bout2">
+            <div class="promo"><p>-30%</p></div>
+            <div class="reduc"><p>59,99€</p></div>
+            <div class="button"><p>41,99€</p></div>
+          </div>
+        </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <h2> Contenu Télechargeable </h2>
+
+
+      <div id="bloc2">
+        <div style="margin: 50px; margin-top:0px;"><h3 style="margin-top:20px; margin-bottom:20px;"> Season Pass Borderlands 3 </h3>
+            <%= image_tag "Image 6.png" %>
+        </div>
+        <div style="padding:50px; padding-bottom:0px;display:flex;flex-direction:column;">
+            <p> Prolongez votre aventure dans Borderlands 3 avec le Season Pass, regroupant des élements cosmétiques exclusifs et quatres histoires additionelles, pour encore plus de missions et de défis !</p>
+            <ul>
+              Le season Pass inclut :
+              <li> 4 packs de contenu avec histoires, missions et défis aditionnels.</li>
+              <li> Skin d'armes Etalon du Cul </li>
+              <li> Pendentif d'armes Etalon du Cul</li>
+              <li> Mod de Grenade Etalon du Cul </li>
+            </ul>
+            <div class="buttonb">
+              <p> 31.99€ </p>
+            </div>
+          </div>
+      </div>
+
+
+
+      <div id="slider">
+          <%= image_tag "1.jpg",class:"mySlides" %>
+          <%= image_tag "2.jpg",class:"mySlides" %>
+          <%= image_tag "3.jpg",class:"mySlides" %>
+          <%= image_tag "4.jpg",class:"mySlides" %>
+          <%= image_tag "5.jpg",class:"mySlides" %>
+          <%= image_tag "6.jpg",class:"mySlides" %>
+          <%= image_tag "7.jpg",class:"mySlides" %>
+          <%= image_tag "8.jpg",class:"mySlides" %>
+          <%= image_tag "9.jpg",class:"mySlides" %>
+          <%= image_tag "10.jpg",class:"mySlides" %>
+          <button id="button_left" onclick="plusDivs(-1)"></button>
+          <button id="button_right" onclick="plusDivs(+1)"></button>
+      </div>
+
+
+
+      <script> var slideIndex = 0;
+
+      var a = setTimeout("plusDivs(+1)", 2500);
+
+      function plusDivs(n) {
+          showDivs(slideIndex += n);
+          clearTimeout(a);
+          a = setTimeout("plusDivs(+1)", 2500);
+      }
+
+      function showDivs() {
+          var x = document.getElementsByClassName("mySlides");
+          if (slideIndex >= x.length)
+          {slideIndex = 0;}
+          if (slideIndex < 0)
+          {slideIndex = x.length-1;}
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          console.log(slideIndex);
+          x[slideIndex].style.display = "block";
+          x[slideIndex].style.height = "100%";
+          x[slideIndex].style.margin = "auto";
+      }
+      </script>
+
+
+
+
+        <h2> A propos du jeu </h2>
+      <div id="blocapropos">
+          <h3> Bienvenue dans Borderlands 3 </h3>
+          <p> Dans le recoin le plus obscur de la galaxie se trouve un groupe de planètes exploitées par d'impitoyables entreprises d'armement militaire. Des planètes ou règnent violence et trésors.
+            C'est l'univers de Borderlands,et c'est chez vous. Récemment, un culte de fous furieux appelé Les Descendants de l'Arche est apparu et a commencé à se propager plus vite qu'une peste intergalactique.</p>
+          <h3> Choisissez votre Chasseur de l'Arche </h3>
+          <p> Incarnez l'un des quatre nouveaux chasseurs de l'Arche, les héros en quète des trésors du monde de Borderlands. Personnalisez votre chasseur de l'Arche à partir de nombreuses options et
+            utilisez leurs arbres de compétences uniques pour adapter leurs capacités à votre propre style de jeu.</p>
+      </div>
+
+
+
+<h2> Articles </h2>
+  <div id="blocarticle">
+  <p>“Préparez-vous à monter de niveau. Préparez-vous à récupérer du butin. Préparez-vous à vous perdre dans le monde bizarre, hilarant et magnifique de Pandore.”
+9/10 – IGN</p>
+    <p>“Borderlands 2 se présente comme le meilleur titre de Gearbox et comme l'une des épopées du jeu-vidéo les plus mémorables et les plus marrantes auxquelles j'ai joué dans ma vie.”
+4.5/5 – GameSpy</p>
+      <p>“C'est LE jeu et ça offre à Borderlands une fraicheur continuelle comme aucun autre jeu de tir. ”
+90/100 – PC Gamer</p>
+  </div>
+
+
+  <h2> Configuration </h2>
+  <div id="blocconf">
+    <div id="mini">
+    </div>
+    <div id="reco">
+    </div>
+  </div>
+
+

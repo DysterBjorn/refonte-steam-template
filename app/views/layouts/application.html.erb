@@ -10,11 +10,118 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%# Navbar ici par exemple %>
+
+<header>
+<nav id="nav" class="navbar">
+    <div class="header">
+
+      <div id="logo">
+        <%= link_to "/" do %><%= image_tag "logo-steam3.png" %><% end %>
+      </div>
+
+      <div class="lemenu">
+        <a href="#"> MAGASIN </a>
+        <a href="#"> COMMUNAUTÉ </a>
+        <a href="#"> A PROPOS </a>
+        <a href="#"> SUPPORT </a>
+      </div>
+
+      <div id="infos">
+        <%= image_tag "language.svg" %>
+        <a href="#"> Langue </a>
+        <%= image_tag "person.svg" %>
+
+        <% if current_page?(:controller => 'pages', :action => 'home') %>
+          <%= link_to "Se connecter", "/homeco" %>
+        <% else %>
+          <a href="#"> Mon compte </a>
+        <% end %>
+
+      </div>
+
+
+      <a href="#" class="button"><span class="add">Installer Steam</span></a>
+
+    </div>
+
+  </nav>
+</header>
+
+
+
+<head>
+  <div class="head">
+    <div id="headtext">
+      <p>A la une </p>
+      <%= image_tag "forme.png" %>
+      <p> Catalogue </p>
+      <%= image_tag "forme.png" %>
+      <p> Actualités </p>
+      <%= image_tag "forme.png" %>
+    </div>
+    <div id="caddie">
+      <%= image_tag "caddie.jpg" %>
+    </div>
+    <div id="searchbar">
+      <%= image_tag "loupe.png" %>
+      <p> Rechercher... </p>
+    </div>
+  </div>
+</head>
 
     <%= yield %>
 
-    <%# Footer ici par exemple %>
+<footer class=footer>
+    
+
+      <div class="footerup">
+        <div class="divup">
+          <h6>A propos</h6>
+          <p class="pfooter">Les marques citées sont la propriété de leurs détenteurs respectifs, aux États-Unis et dans d'autres pays.
+            TVA incluse pour tous les prix (le cas échéant).
+          </p>
+        </div>
+        <div class="divup">
+          <h6>Mentions légales</h6>
+          <a class="pfooter pfooter2 liens" href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank">Politique de protection de la vie privée</a>
+          <br>
+          <a class="pfooter pfooter2 liens" href="https://store.steampowered.com/legal/?snr=1_44_44_" target="_blank">Mentions légales</a>
+          <br>
+          <a class="pfooter pfooter2 liens" href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="_blank">Accord de souscription Steam</a>
+          <br>
+          <a class="pfooter pfooter2 liens" href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="_blank">Remboursements</a>
+        </div>
+        <div class="divup">
+          <h6>Autres catégories</h6>
+          <a class="pfooter pfooter2 liens" href="http://www.valvesoftware.com/about.html" target="_blank">À propos de Valve</a><br>
+          <a class="pfooter pfooter2 liens" href="http://www.steampowered.com/steamworks/" target="_blank">Steamworks</a>
+          <br>
+          <a class="pfooter pfooter2 liens" href="https://partner.steamgames.com/steamdirect" target="_blank">Distribution Steam</a>
+          <br>
+          <a class="pfooter pfooter2 liens" href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank">Cartes cadeau</a>
+          </p>
+        </div>
+        <div class="divup2">
+            <a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank"><%= image_tag "fb.png", class:"Facebook img" %></a>
+            <a href="http://twitter.com/steam_games" target="_blank"><%= image_tag "twi.png", class:"img" %></a> 
+        </div>
+      </div>
+
+      <div class="trait"></div>
+      
+      <div class="footerdown">
+        <div class="divdown">
+          <p class="pfooter copyright">© 2019 Valve Corporation. Tous droits réservés.</p>
+        </div>
+        <div class="divdown">
+          <%= image_tag "steam.png", class:"img2" %>
+          <%= image_tag "valve.png", class:"img2" %>
+        </div>
+      </div>
+
+    
+
+  </footer>
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

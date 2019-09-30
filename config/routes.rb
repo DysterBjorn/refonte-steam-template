@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   # On peut ajouter d'autres pages comme :
-  # get "/michel", to: 'pages#michel'
+  get "/homeco", to: 'pages#homeco'
+   get "/game", to: 'pages#game'
+  
 end
